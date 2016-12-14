@@ -18,7 +18,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="invoke Static"
         android:id="@+id/button1"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
@@ -26,7 +26,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="invoke !Static"
         android:id="@+id/button"
         android:layout_below="@+id/button1"
         android:layout_centerHorizontal="true" />
@@ -34,8 +34,16 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="Get Object Field"
         android:id="@+id/button2"
         android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Invoke GET &amp; SET"
+        android:id="@+id/button3"
+        android:layout_below="@+id/button2"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>

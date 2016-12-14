@@ -17,9 +17,11 @@ public class MainActivity extends AppCompatActivity {
         Button button1 = (Button) findViewById(R.id.button1);
         Button button = (Button) findViewById(R.id.button);
         Button button2 = (Button) findViewById(R.id.button2);
+        Button button3 = (Button) findViewById(R.id.button3);
         button1.setOnClickListener(new MyClickListener());
         button.setOnClickListener(new MyClickListener());
         button2.setOnClickListener(new MyClickListener());
+        button3.setOnClickListener(new MyClickListener());
         myJni = new MyJni();
 
     }
@@ -38,6 +40,13 @@ public class MainActivity extends AppCompatActivity {
                     myJni.nativeExec(10);
                     break;
                 case R.id.button2:
+                    Log.d("123","" + myJni.n);
+                    Log.d("123", "nativeGetMyJniFieldN : " + myJni.nativeGetMyJniFieldN());
+                    break;
+                case R.id.button3:
+                    Log.d("123","GET : " + myJni.nativeGetN());
+                    myJni.nativeSetN(11);
+                    Log.d("123","GET : " + myJni.nativeGetN());
                     break;
             }
         }

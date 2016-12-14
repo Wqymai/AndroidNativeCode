@@ -13,7 +13,7 @@ extern "C" {
  * Signature: ()V
  */
 JNIEXPORT void JNICALL Java_com_example_qiuyu_testhellojni_MyJni_nativeSetup
-  (JNIEnv *, jobject);
+        (JNIEnv *, jobject);
 
 /*
  * Class:     com_example_qiuyu_testhellojni_MyJni
@@ -21,7 +21,7 @@ JNIEXPORT void JNICALL Java_com_example_qiuyu_testhellojni_MyJni_nativeSetup
  * Signature: (I)V
  */
 JNIEXPORT void JNICALL Java_com_example_qiuyu_testhellojni_MyJni_nativeExec
-  (JNIEnv *, jobject, jint);
+        (JNIEnv *, jobject, jint);
 
 /*
  * Class:     com_example_qiuyu_testhellojni_MyJni
@@ -29,7 +29,31 @@ JNIEXPORT void JNICALL Java_com_example_qiuyu_testhellojni_MyJni_nativeExec
  * Signature: (I)V
  */
 JNIEXPORT void JNICALL Java_com_example_qiuyu_testhellojni_MyJni_nativeStaitcExec
-  (JNIEnv *, jclass, jint);
+        (JNIEnv *, jclass, jint);
+
+/*
+ * Class:     com_example_qiuyu_testhellojni_MyJni
+ * Method:    nativeGetMyJniFieldN
+ * Signature: ()I
+ */
+JNIEXPORT jint JNICALL Java_com_example_qiuyu_testhellojni_MyJni_nativeGetMyJniFieldN
+        (JNIEnv *, jobject);
+
+/*
+ * Class:     com_example_qiuyu_testhellojni_MyJni
+ * Method:    nativeSetN
+ * Signature: (I)V
+ */
+JNIEXPORT void JNICALL Java_com_example_qiuyu_testhellojni_MyJni_nativeSetN
+        (JNIEnv *, jobject, jint);
+
+/*
+ * Class:     com_example_qiuyu_testhellojni_MyJni
+ * Method:    nativeGetN
+ * Signature: ()I
+ */
+JNIEXPORT jint JNICALL Java_com_example_qiuyu_testhellojni_MyJni_nativeGetN
+        (JNIEnv *, jobject);
 
 #ifdef __cplusplus
 }
